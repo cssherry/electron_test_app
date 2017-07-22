@@ -17,6 +17,8 @@
     - Can be multiple (call/post, etc)
     - Can talk to each other through Main Process, not possible in browser
 
+# Building Visual Studio Code
+
 ## Getting Started
 - $ npm init (package.json tells which files launch to create app: contains name, main, script)
   - main: index.js by default
@@ -24,3 +26,13 @@
 - $ node . (runs in terminal)
 - $ npm install --save electron (declared dependency on electron)
 - $ npm start
+
+## Getting as much done as possible
+- Open and save file are the save
+- Important components: app, BrowserWindow
+- Don't open arbitrary website with access to full system, create own website
+- Requiring files:
+  - In JS: `__dirname`: path that current file is in
+  - In HTML: 'require('./renderer.js')'
+
+## Security
