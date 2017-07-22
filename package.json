@@ -4,12 +4,16 @@
   "description": "We will be testing out how to create electron app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cssherry/electron_test_app.git"
   },
   "author": "Sherry",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.11"
+  }
 }
