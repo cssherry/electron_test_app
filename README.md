@@ -35,4 +35,19 @@
   - In JS: `__dirname`: path that current file is in
   - In HTML: 'require('./renderer.js')'
 
+## Add editor
+- npm install --save monaco-loader
+- in renderer.js, require('monaco-loader')
+- wait for complete: loader().then(monaco => {
+    monaco.editor.create(div, {
+        language: 'javascript',
+        theme: 'vs-dark',
+        automaticLayout: true,
+      });
+  })
+
+## Offline, notifications, etc
+
+## Installers and Binaries
+
 ## Security
